@@ -1,0 +1,257 @@
+@font-face{
+    font-family: akronim-regular;
+    src: url(/fonts/Akronim-Regular.ttf);
+}
+
+
+*{font-family: 'Roboto', sans-serif;}
+h1,h2,h3,h4,h5{font-family: akronim-regular ;}
+body{margin: 0px;}
+.unipadding{
+    padding: 0 7%;
+}
+/* top-bar */
+#topbar{
+    background-color: #576574;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    overflow: auto;
+    
+}
+#socialicon{
+    float:right
+
+}
+#tollfree{
+    float: left;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+}
+.fab{
+    background-color: white;
+    color: #576574;
+    padding: 7px; border-radius: 50% ;
+}
+
+
+
+
+.fa-whatsapp{padding:7px 7px ;
+
+
+}
+.fa-instagram{padding:7px 7px}
+
+/* /logo bar/ */
+
+#navbar{
+    background-color: #ee5253;
+}
+#navbar ul{ margin: 0;
+padding: 0;}
+#navbar ul li{
+    display: inline-block;
+list-style-type: none;
+padding: 18px 0px;
+padding-right:35px ;
+}
+#navbar ul li a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* /poster/ */
+#poster{
+    background-image: url(/images/building2.jpg);
+    background-repeat: no-repeat;height: 500px;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#poster h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+#poster p{ 
+    font-size: 18px;
+    text-align: center;
+}
+/* /whyussection/ */
+#whysection{
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.red-heading{
+    color: #ee5253;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.section33 h2{
+    color: #ee5253;
+}
+.section33 p{ 
+    color: #363636;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    padding: 0px 50px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+/* /contactsection/ */
+#contact-container{
+    background-color: #ee5253;
+    color: white;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.section70{
+width: 70%;
+float: left;
+}
+.section30{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 70px;
+   
+}
+#contact-button{
+    background-color: white;
+    color: #ee5253;
+padding: 15px 50px; 
+text-decoration: none;
+font-size: 18px;
+font-weight: 600;
+border-radius: 8px;
+}
+/* /blog/ */
+.section33 img{
+    max-width: 100%;
+max-height: 170px;
+}
+.section33 a{
+    color: #ee5253;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: akronim-regular ;
+}
+/* /subscribe/ */
+#subscribe-section{
+    background-color:#ee5253 ;
+    color: white;
+    overflow: auto;
+    padding: 50px 0px;
+}
+.section50{
+    width: 50%;
+    float:left;
+}
+.section50 h2{
+    font-size:25px ;
+    text-align: right;
+    padding-right: 50px;
+}
+.section50 form{padding-top: 25px;}
+.section50 input[type="text"]{
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #ee5253;
+    margin-right: 20px;
+    border: 0px;
+    width: 45%;
+
+}
+.section50 input[type="submit"]{
+padding: 7px 35px;
+font-size: 15px;
+color: #ee5253;
+border: 0px;
+}
+/* /footer/ */
+#implink{
+    background-color: #576574;
+    color: white;
+    overflow: auto;
+}
+.div33{width: 33.33%;
+float: left;padding: 20px 50px;
+box-sizing: border-box;}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    font-weight: normal;
+}
+#footer-menu{
+    list-style-type: none;
+    padding: 0px;
+
+}
+#footer-menu li{ 
+    padding-bottom: 10px;
+}
+#footer-menu li a{
+    text-decoration:none ;
+    color: white;
+}
+#footer-menu-container{
+    padding-left: 100px;
+}
+#copyright{
+    background-color:#222f30 ;
+    text-align: center;
+    color:#cbcbcb;
+    padding: 10px;
+    
+}
+/* /responsive ipad/ */
+
+@media only screen and (max-width:768px)
+{
+    #navbar ul li{padding-right: 20px;}
+    .section70{padding-right: 20px;
+    box-sizing: border-box;}
+    
+    
+}
+/* /responsive mobile/ */
+@media only screen and (max-width:500px)
+{#logobar{text-align: center;}
+ .section33,.section30,.section50,.section70,.div33{width: 100%;} 
+ .section70{text-align: center;
+padding: 0px;}
+.section30{ 
+    padding-top: 21px;
+    padding-bottom: 20px;
+}  .section33 a{ 
+    margin-bottom: 30px;
+    display: inline-block;
+
+}.section50 h2 {
+    font-size: 25px;
+    text-align: right;
+    padding-right: 0px;
+    text-align: center;}
+    .section50 form {
+        padding-top: 25px;
+        padding-left: 20px;}
+        #footer-menu li {
+            padding-bottom: 15px;
+            padding-right: 35px;
+        }
+        .div33 h3 {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 2px;
+            font-weight: normal;
+}}
